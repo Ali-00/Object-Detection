@@ -6,8 +6,8 @@ classes = []
 with open('coco.names', 'r') as f:
     classes = f.read().splitlines()
 
-cap = cv2.VideoCapture(0)
-#img = cv2.imread('detect.jpeg')
+cap = cv2.VideoCapture(0) # for webcam
+#img = cv2.imread('detect.jpeg') # uncommit this line for using picture.
 
 while True:
     _, img = cap.read()
